@@ -60,6 +60,18 @@ textarea {
   display: block;
 }
 
+.button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.button-section button {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 2px;
+  margin: 0 10px;
+}
+
 .single-post {
   margin: 20px 0;
   padding: 15px;
