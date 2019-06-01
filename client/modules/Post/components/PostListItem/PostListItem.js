@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
+import thumbUp from './thumbs-up-regular.svg';
+import thumbDown from './thumbs-down-regular.svg';
 
 // Import Style
 import styles from './PostListItem.css';
@@ -17,7 +19,8 @@ function PostListItem(props) {
       <p className={styles['author-name']}><FormattedMessage id="by" /> {props.post.name}</p>
       <p className={styles['post-desc']}>{props.post.content}</p>
       <div className={styles['button-section']}>
-        <button className={styles['button-up']} onClick={props.onThumbUp}>+</button><p>{props.post.voteCount}</p><button onClick={props.onThumbDown}>-</button>
+        <button className={styles['button-up']} onClick={props.onThumbUp}><img src={thumbUp} alt="thumbUp svg" />
+        </button><p>{props.post.voteCount}</p><button onClick={props.onThumbDown}><img src={thumbDown} alt="thumbDown svg" /></button>
       </div>
       <p className={styles['post-action']}><a href="#" onClick={props.onDelete}><FormattedMessage id="deletePost" /></a></p>
       <hr className={styles.divider} />

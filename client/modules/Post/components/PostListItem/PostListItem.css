@@ -70,6 +70,19 @@ textarea {
   font-size: 15px;
   padding: 2px;
   margin: 0 10px;
+  border: none;
+  background: inherit;
+  outline: none;
+}
+
+.button-section p {
+  padding-top: 3px;
+}
+
+.button-section button img {
+  min-height: 20px;
+  min-width: 20px;
+  background: inherit;
 }
 
 .single-post {
